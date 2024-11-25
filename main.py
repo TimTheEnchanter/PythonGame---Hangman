@@ -35,6 +35,10 @@ def hangman():
             print("You have already guessed that letter.")
         else:
             print("Invalid character")
+    if lives == 0:
+        print("You died, sorry. Try again.")
+    print("You guessed the word ",word)
+
 
 user_input = input("Type something:")
 print(user_input)
